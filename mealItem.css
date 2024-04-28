@@ -1,0 +1,32 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    /* width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.container{
+    margin: auto;
+}
+.itemName{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.img-contaner{
+    display: flex;
+    justify-content: center;
+}
+.img-contaner img{
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    border-radius: 7px;
+}
+.instructions{
+    padding: 10px;
+    font-size: 18px;
+}

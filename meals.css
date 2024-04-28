@@ -1,0 +1,172 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+margin: 0;
+padding: 0px;
+}
+button{
+    outline: none;
+    border: none;
+}
+/* For  Navigation  Stat*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(118, 65, 152, 0.5);
+
+}
+nav div{
+display: flex;
+align-items: center;
+
+}
+nav  div input{
+    outline: none;
+    border: none;
+    width: 220px;
+    height: 30px;
+font-size: 18px;
+padding: 5px;
+padding-left: 10px;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+nav div button{
+    height: 30px;
+    width: 70px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    background-color: #fff;
+    border-radius: 7px;
+}
+/* For  Navigation  End*/
+.favouriteMealsBtn{
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(162, 99, 220);;
+
+}
+
+.fetching-data h2{
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+.serachMealData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.serachMealData h2{
+    
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        letter-spacing: 1px;
+        /* padding: 6rem 1rem; */
+
+}
+/* Display Meals Start  */
+.displayMeals {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    
+    /* grid-template-rows: repeat(400px); */
+    grid-template-columns: 300px 300px;
+}
+
+.displayMeals .mealCard{
+    background-color: rgb(162, 99, 220);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+}
+.displayMeals .mealCard:hover{
+    transform: translateY(-10px)
+}
+.mealCard .addOrRemove{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.mealCard .addOrRemove button{
+    width:  35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.mealCard .addOrRemove button:hover{
+    transform: scale(1.1);
+}
+.addFavourate{
+     
+    color: red;
+}
+.mealCard .addOrRemove .removeFavourate{
+    font-size: 27px;
+    font-weight: 600;
+    color: #3d3030
+}
+.imageContainer img{
+width: 100%;
+height: 250px;
+}
+.mealDetails h4{
+    text-align: center;
+    padding-top: 10px;;
+    font-weight: 600;
+    font-size: 25px;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 60px;
+}
+.mealDetails h4::-webkit-scrollbar{
+    display: none;
+}
+
+/* Display Meals End */
+
+
+
+
+
+
+/* For Responsive ness Start */
+@media screen and (min-width:1000px) {
+    .displayMeals {
+        grid-template-columns: 300px 300px 300px; 
+        gap: 25px;
+    }
+}
+@media screen and (max-width:650px) {
+    .displayMeals {
+        grid-template-columns: 400px; 
+        gap: 25px;
+    }
+}
+
+
+/* For Responsive ness End */
