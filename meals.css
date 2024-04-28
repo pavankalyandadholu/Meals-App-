@@ -161,10 +161,17 @@ height: 250px;
         gap: 25px;
     }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width:500px) {
     .displayMeals {
         grid-template-columns: 400px; 
         gap: 25px;
+    }
+    nav{
+        flex-direction: column;
+
+    }
+    nav h2{
+        margin-bottom: 10px;;
     }
 }
 
