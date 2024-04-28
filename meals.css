@@ -161,9 +161,9 @@ height: 250px;
         gap: 25px;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:480px) {
     .displayMeals {
-        grid-template-columns: 400px; 
+        grid-template-columns: 300px; 
         gap: 25px;
     }
     nav{
