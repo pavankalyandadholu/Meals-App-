@@ -17,7 +17,7 @@ function showFavoritesDisplayfunciton() {
   favouriteMealsEl.addEventListener("click", () => {
     const favariteData = JSON.parse(localStorage.getItem("likedMeals"));
     serachMealDataEl.style.display = "none";
-
+    fetchingDataInformationEl.textContent=''
     displayMealsEl.textContent = "";
     if (favariteData.length != 0) {
       favariteData.map((meals) => {
