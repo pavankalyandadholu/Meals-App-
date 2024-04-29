@@ -42,6 +42,8 @@ inputEl.addEventListener("keydown", (e) => {
     inputEl.value = "";
     displayMealsEl.textContent = "";
     fetchingDataInformationEl.style.display = "block";
+  fetchingDataInformationEl.textContent=`Fetching Data ....`;
+
     serachMealDataEl.style.display = "none";
     fetchAndDisplayInputMeals(userInput);
   }
@@ -52,6 +54,7 @@ searchBtn.addEventListener("click", () => {
   inputEl.value = "";
   displayMealsEl.textContent = "";
   fetchingDataInformationEl.style.display = "block";
+  fetchingDataInformationEl.textContent=`Fetching Data ....`;
   serachMealDataEl.style.display = "none";
   fetchAndDisplayInputMeals(userInput);
 });

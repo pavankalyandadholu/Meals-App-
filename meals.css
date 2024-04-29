@@ -5,6 +5,7 @@ padding: 0px;
 }
 button{
     outline: none;
+    cursor: pointer;
     border: none;
 }
 /* For  Navigation  Stat*/
